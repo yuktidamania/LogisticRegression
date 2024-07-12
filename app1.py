@@ -4,10 +4,10 @@ import pandas as pd
 import joblib
 
 
-clf = joblib.load(open("titanic_model.pkl","rb"))
+clf = joblib.load(open("new_titanic_model.pkl,"rb"))
 
 def predict(data):
-    clf = joblib.load(open("titanic_model.pkl","rb"))
+    clf = joblib.load(open("new_titanic_model.pkl","rb"))
     return clf.predict(data)
 
 st.title("Titanic Passenger Survival Prediction")
