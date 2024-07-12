@@ -4,7 +4,7 @@ import pandas as pd
 import joblib
 
 
-clf = joblib.load(open("new_titanic_model.pkl,"rb"))
+clf = joblib.load(open("new_titanic_model.pkl","rb"))
 
 def predict(data):
     clf = joblib.load(open("new_titanic_model.pkl","rb"))
