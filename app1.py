@@ -7,7 +7,7 @@ import joblib
 clf = joblib.load(open("titanic_model.pkl","rb"))
 
 def predict(data):
-    clf = joblib.load(open("titanic_model.pkls","rb"))
+    clf = joblib.load(open("titanic_model.pkl","rb"))
     return clf.predict(data)
 
 st.title("Titanic Passenger Survival Prediction")
